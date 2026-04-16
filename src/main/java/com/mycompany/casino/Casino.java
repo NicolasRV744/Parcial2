@@ -1,4 +1,4 @@
- //Nicolas Romero Vargas y Juan David Rodriguez Pachon
+ //Nicolas Romero Vargas y Juan David Rodriguez Pachon  
 package com.mycompany.casino;
 
 public class Casino {
