@@ -39,9 +39,34 @@ Segunda pregunta: si se incluyo algun metodo de busqueda explique su objetivo, v
 
 RESPUESTA
 
-Metodo de busqueda: calcularPuntos
+Metodo de busqueda: calcularPuntos en la clase jugador.java 
 
 Objetivo: Recorrer todas las cartas de la mano del jugador para calcular el puntaje total.
 Durante este proceso, también identifica cartas especiales como el As.
 
-Parametros: public int calcularPuntos
+Parametros:
+public int calcularPuntos: los parametros que utiliza se trabajan directamente sobre el atributo 
+
+Valor de retorno: es el Java int, Retorna el puntaje total del jugador según las reglas del Blackjack.
+
+Funcionamiento:
+while ((c = (Carta) mano.desencolar()) != null)
+1. este es el que permite revisar cada carta 
+2. Identifica los valores
+3. hace la cuenta de los ases 
+
+Todas estas funciones son equivalentes a una busqueda secuencial en la estructura 
+
+Fuentes:
+Donde se define:
+jugador.java
+lineas 19-52
+
+Uso: 
+juego.java = int puntos.calcularPuntos()
+lineas 40-45 
+
+juego.java = while(dealer.calcularPuntos() < 17)
+lineas 60-65 
+
+Explicacion: El método calcularPuntos realiza un recorrido secuencial sobre la estructura de datos, lo cual cumple una función de analizar cada elemento para obtener información. "El método es un recorrido secuencial de la estructura, ya que analiza cada carta de la mano para calcular el total, por lo que se comporta como una búsqueda sobre todos los elementos."
