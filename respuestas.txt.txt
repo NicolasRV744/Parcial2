@@ -1,0 +1,47 @@
+primera pregunta: Referir al menos una clase nueva, diferente a las referidas en la librería "mi librería.jar" que haya incluido en su proyecto y explique de manera general sus nuevos atributos y / o métodos?
+
+RESPUESTA:
+
+Clase: 
+referida es Jugador.java, La clase Jugador fue implementada para representar a cada participante del juego, incluyendo tanto al usuario como al dealer.
+Fuente: jugador.java(linea 4-5)
+ 
+Atributos: 
+String nombre que es el que almacena el nombre del jugador.
+
+ColaEnlazada mano es la estructura de datos que contiene las cartas del jugador. Se utiliza una cola enlazada proveniente de la librería proporcionada para gestionar las cartas.
+
+Fuente: jugador.java(linea 6-7)
+ 
+
+
+Para los Métodos principales:
+Jugador(String nombre): es el Constructor que inicializa el nombre del jugador y crea una nueva mano vacía.
+
+En cuanto al void recibirCarta(Carta carta) nos permitio agregar una carta a la mano del jugador y mostrarla en pantalla.
+
+Para el int calcularPuntos: sirve para calcular el puntaje total del jugador recorriendo todas sus cartas. incluyendo un manejo dinamico para el As
+permitiendo que su valor sea 11 o 1 dependiendo de la situación.
+
+void limpiarMano: es la encargada de reiniciar la mano del jugador para comenzar una nueva ronda.
+
+String getNombre: nos retorna el nombre del jugador.
+
+Fuente: jugador.java(linea 9-60)
+ 
+
+Explicación general
+La clase Jugador es fundamental dentro del sistema, ya que encapsula la lógica relacionada con las cartas y el puntaje. Ademas, permite reutilizar la misma estructura tanto para el jugador como para el dealer, simplificando el diseño del programa.
+
+=====================================================================================================================================================
+
+Segunda pregunta: si se incluyo algun metodo de busqueda explique su objetivo, valor de retorno y parametros(cada uno de ellos) refiera las fuentes (donde se define y donde se llama)
+
+RESPUESTA
+
+Metodo de busqueda: calcularPuntos
+
+Objetivo: Recorrer todas las cartas de la mano del jugador para calcular el puntaje total.
+Durante este proceso, también identifica cartas especiales como el As.
+
+Parametros: public int calcularPuntos
