@@ -1,4 +1,3 @@
-
 package com.mycompany.casino;
 public class Carta {
 
